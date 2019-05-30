@@ -108,6 +108,11 @@ float: left;
 width: 33.33%;
 padding: 5px;
 }
+.columncenter {
+float: center;
+width: 33.33%;
+padding: 5px;
+}
 .columnright {
 float: right;
 width: 33.33%;
