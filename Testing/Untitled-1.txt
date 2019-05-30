@@ -1,0 +1,20 @@
+<font color=#FFFFFF><h1>Pages</h1></font>
+	<a href="Contact.html"><button>Contact me</button></a>
+
+    <nav>
+	<ul>
+		<font color=#FFFFFF><h1>Pages</h1></font>
+		<a href="Contact.html"><button>Contact me</button></a>
+		<a href="Test.html"><button>Test</button></a>
+	</ul>
+</nav>
+  </div>
+
+  <body style="background-color:rgb(32, 92, 54);">
+    <form action="https://formspree.io/Nicholass077@gmail.com" method="POST">
+      <input type="text" placeholder="Your First Name" name="First Name">
+      <input type="text" placeholder="Your Last Name" name="Last Name">
+      <input type="text" placeholder="Type Your Message Here" name="Message">
+      <input type="email" placeholder="Your Email" name="Email">
+      <input type="submit" value="Send">
+    </form>

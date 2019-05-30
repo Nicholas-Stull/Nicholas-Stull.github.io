@@ -1,0 +1,187 @@
+ul,li{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+#i-slider{
+	width: 620px;
+	height: 320px;
+	position: relative;
+
+	ul{
+
+		li{
+
+			&.i-images{
+				position: absolute;
+				width: 620px;
+				height: 320px;
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
+				opacity: 0;
+				visibility: hidden;
+				transition: .22s all linear;
+
+				&.active{
+					visibility: visible!important;
+					opacity: 1!important;
+					transition: .22s all linear;
+				}
+				
+			}
+
+		}
+html,body{
+	padding: 0;
+	margin: 0;
+	font-family: "Lato";
+	font-size: 100%;
+	overflow-X: hidden;
+}
+
+.slider-container{
+
+	position: relative;
+
+	.slider-trigger{
+		z-index: 9999999;
+		position: absolute;
+		padding: 20px;
+		display: inline-block;
+
+		img{
+			width: 30px;
+		}
+
+	}
+
+	.slider-parent{
+		height: 100vh;
+		max-width: 250px;
+		width: 100%;
+		background: #fff;
+		z-index: 999999;
+		position: absolute;
+		left: 0;
+		top: 0;
+		box-shadow: 3px 0 10px .1px rgba(0,0,0,.5);
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+		transition: .1s opacity ease-in-out;
+
+		&.active{
+			visibility: visible;
+			pointer-events: inherit;
+			opacity: 1;
+			transition: .1s opacity ease-in-out;
+		}
+
+	}
+
+	.slider-bg{
+		content: '';
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 9999;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,.2);
+		pointer-events: none;
+		visibility: hidden;
+		opacity: 0;
+		transition: .1s left,opacity,visibility ease-in-out;
+
+		&.active{
+			opacity: 1;
+			visibility: visible;
+			pointer-events: inherit;
+			transition: .1s left,opacity,visibility ease-in-out;
+		}
+
+	}
+
+}
+
+.container{
+	width: 100%;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: .1s left ease-in-out;
+
+
+	&.active{
+		transition: .1s left ease-in-out;
+		left: 250px;
+	}
+
+}
+
+
+
+	}
+
+	.i-nav{
+
+		position: relative;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999999;
+		display: table;
+
+		& > span{
+			max-height: 100%;
+			display: block;
+			padding: 25% 15px;
+			cursor: pointer;
+			display: table-cell;
+			font-weight: bold;
+			color: rgba(256,256,256,.7);
+			z-index: 999999999;
+			font-size: 20px;
+			transition: .22s all linear;
+			background-color: rgba(0,0,0,.1);
+
+			&:hover{
+				background-color: rgba(0,0,0,.5);
+			}
+
+		}
+
+		.i-next{
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+
+		.i-pre{
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+
+			img{
+				transform: rotate(180deg);
+			}
+
+		}
+
+	}
+
+}

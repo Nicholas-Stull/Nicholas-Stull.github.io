@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="assets/Favicon.ico" type="image/x-icon" />
+	<title>Nicholas | Snake</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="About.html">About</a>
+		<!---<a href="contact.html">Contact Me</a>-->
+		<a href="UnderConstuction.html">Music</a>
+		<a href="snake.html">Snake</a>
+	</div>
+
+	<div class="Columnleft2">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></span>
+	</div>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+
+	</script>
+	</div>
+	<div class="icons"><a href="https://github.com/Nicholas-Stull" rel="noopener noreferrer" target="_blank"
+			rel="nofollow me"><svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="25"
+				height="25">
+				<path
+					d="M12.5 0.6c-6.9 0-12.5 5.6-12.5 12.5 0 5.5 3.6 10.2 8.5 11.9 0.6 0.1 0.9-0.3 0.9-0.6 0-0.3 0-1.1 0-2.2-3.5 0.8-4.2-1.7-4.2-1.6-0.6-1.4-1.4-1.8-1.4-1.9-1.1-0.8 0.1-0.8 0.1-0.7 1.3 0.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 0.1-0.8 0.4-1.4 0.8-1.7-2.8-0.3-5.7-1.4-5.7-6.1 0-1.4 0.5-2.5 1.3-3.4-0.1-0.3-0.6-1.6 0.1-3.3 0 0 1-0.3 3.5 1.3 1-0.3 2.1-0.4 3.1-0.4 1.1 0 2.1 0.1 3.1 0.4 2.4-1.6 3.4-1.3 3.5-1.3 0.7 1.7 0.3 3 0.1 3.3 0.8 0.9 1.3 2 1.3 3.4 0 4.8-2.9 5.9-5.7 6.1 0.4 0.4 0.8 1.1 0.8 2.3 0 1.7 0 3 0 3.5 0 0.3 0.2 0.7 0.9 0.6 5-1.7 8.5-6.3 8.5-11.9 0-6.9-5.6-12.5-12.5-12.5"
+					fill="#000" stroke="none" /></svg></a><a href="https://www.facebook.com/downtheStreetoflife"
+			rel="noopener noreferrer" target="_blank" rel="nofollow me"><svg xmlns:svg="http://www.w3.org/2000/svg"
+				xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+				<path
+					d="M17.2 25l0-9.7 3.2 0 0.5-3.8-3.7 0 0-2.4c0-1.1 0.3-1.8 1.8-1.8l2 0 0-3.4c-0.3 0-1.5-0.1-2.9-0.1-2.9 0-4.9 1.8-4.8 5l0 2.7-3.3 0 0 3.8 3.3 0 0 9.7 3.9 0z"
+					fill="#000" /> </svg></a>
+		<!----<a href="https://twitter.com/roberteisele  target="_blank"  rel="noopener noreferrer" rel="nofollow me"><svg
+	        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" height="25" width="25">
+	        <path
+	          d="M7.9 22.7c9.4 0 14.6-7.8 14.6-14.6 0-0.2 0-0.4-0.1-0.7 1-0.7 1.9-1.6 2.6-2.7-0.9 0.4-1.9 0.7-2.9 0.9 1.1-0.6 1.9-1.6 2.2-2.9-1 0.6-2.1 1-3.2 1.3-0.9-1-2.3-1.6-3.8-1.7-2.8 0-5.1 2.3-5.1 5.2 0 0.4 0 0.8 0.1 1.1-4.3-0.2-8-2.3-10.6-5.3-0.4 0.8-0.7 1.6-0.7 2.6 0 1.8 0.9 3.4 2.3 4.2-0.8 0-1.6-0.3-2.3-0.6 0 0 0 0 0 0.1 0 2.5 1.8 4.6 4.1 5-0.4 0.1-0.9 0.2-1.3 0.2-0.3 0-0.7 0-1-0.1 0.7 2 2.5 3.5 4.8 3.5-1.8 1.4-4 2.2-6.4 2.2-0.4 0-0.8 0-1.2 0 2.3 1.5 5 2.3 7.9 2.3"
+	          fill="#000" stroke="none" /></svg> </a>-->
+	</div>
+	<canvas width="400" height="400" id="game"></canvas>
+	<script>
+		var canvas = document.getElementById('game');
+		var context = canvas.getContext('2d');
+
+		var grid = 16;
+		var snake = {
+			x: 160,
+			y: 160,
+			dx: grid,
+			dy: 0,
+			cells: [],
+			maxCells: 4
+		};
+		var count = 0;
+		var apple = {
+			x: 320,
+			y: 320
+		};
+
+		function getRandomInt(min, max) {
+			return Math.floor(Math.random() * (max - min)) + min;
+		}
+
+		// game loop
+		function loop() {
+			requestAnimationFrame(loop);
+
+			// slow game loop to 15 fps instead of 60 - 60/15 = 4
+			if (++count < 4) {
+				return;
+			}
+
+			count = 0;
+			context.clearRect(0, 0, canvas.width, canvas.height);
+
+			snake.x += snake.dx;
+			snake.y += snake.dy;
+
+			// wrap snake position on edge of screen
+			if (snake.x < 0) {
+				snake.x = canvas.width - grid;
+			} else if (snake.x >= canvas.width) {
+				snake.x = 0;
+			}
+
+			if (snake.y < 0) {
+				snake.y = canvas.height - grid;
+			} else if (snake.y >= canvas.height) {
+				snake.y = 0;
+			}
+
+			// keep track of where snake has been. front of the array is always the head
+			snake.cells.unshift({
+				x: snake.x,
+				y: snake.y
+			});
+
+			// remove cells as we move away from them
+			if (snake.cells.length > snake.maxCells) {
+				snake.cells.pop();
+			}
+
+			// draw apple
+			context.fillStyle = 'red';
+			context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
+
+			// draw snake
+			context.fillStyle = 'green';
+			snake.cells.forEach(function (cell, index) {
+				context.fillRect(cell.x, cell.y, grid - 1, grid - 1);
+
+				// snake ate apple
+				if (cell.x === apple.x && cell.y === apple.y) {
+					snake.maxCells++;
+
+					apple.x = getRandomInt(0, 25) * grid;
+					apple.y = getRandomInt(0, 25) * grid;
+				}
+
+				// check collision with all cells after this one (modified bubble sort)
+				for (var i = index + 1; i < snake.cells.length; i++) {
+
+					// collision. reset game
+					if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+						snake.x = 160;
+						snake.y = 160;
+						snake.cells = [];
+						snake.maxCells = 4;
+						snake.dx = grid;
+						snake.dy = 0;
+
+						apple.x = getRandomInt(0, 25) * grid;
+						apple.y = getRandomInt(0, 25) * grid;
+					}
+				}
+			});
+		}
+
+		document.addEventListener('keydown', function (e) {
+			// prevent snake from backtracking on itself
+			if (e.which === 37 && snake.dx === 0) {
+				snake.dx = -grid;
+				snake.dy = 0;
+			} else if (e.which === 38 && snake.dy === 0) {
+				snake.dy = -grid;
+				snake.dx = 0;
+			} else if (e.which === 39 && snake.dx === 0) {
+				snake.dx = grid;
+				snake.dy = 0;
+			} else if (e.which === 40 && snake.dy === 0) {
+				snake.dy = grid;
+				snake.dx = 0;
+			}
+		});
+
+		requestAnimationFrame(loop);
+
+	</script>
+	<div class="footer"><a href="index.html" Home></a></div>
+
+</body>
+
+</html>
