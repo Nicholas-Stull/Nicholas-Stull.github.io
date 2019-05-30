@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <body background="assets/img/stamp.png"></body>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -130,20 +132,28 @@
 
 <body>
 
-
     </div>
-    <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">Home</a>
-    <a href="About Me/About_Me.html">About</a>
-    <a href="Contact me/Contact.html">Contact Me</a>
-    <a href="music/UnderConstuction.html">Music</a>
-    <a href="snake/snake.html">Snake</a>
+    <div class="NavMenu">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <!---<a href="Contact.html">Contact Me</a>-->
+            <a href="UnderConstuction.html">Music</a>
+            <a href="snake.html">Snake</a>
+            <div class="icons">
+                <a href="https://github.com/Nicholas-Stull" rel="noopener noreferrer" target="_blank"><i
+                        class="fab fa-github-square"></i></a>
+                <a href="https://www.facebook.com/downtheStreetoflife" rel="noopener noreferrer" target="_blank"><i
+                        class="fab fa-facebook-square"></i></a>
+                <a href="https://www.messenger.com/t/downtheStreetoflife" rel="noopener noreferrer" target="_blank"><i
+                        class="fab fa-facebook-messenger"></i></a>
+            </div>
+        </div>
     </div>
-
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()" <i class="fas fa-bars"></i></span>
-
+    <div class="columnleft2">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" <i class="fas fa-bars"></i> </span>
+    </div>
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
@@ -153,12 +163,13 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
-    <div class="Tempheader">
-    <div class="highlightTextUndCon">
-    <h1>UNDER CONSTRUCTION</h1>
-    <h1>COMING SOON</h1>
     </div>
-</div>
+    <div class="Tempheader">
+        <div class="highlightTextUndCon">
+            <h1>UNDER CONSTRUCTION</h1>
+            <h1>COMING SOON</h1>
+        </div>
+    </div>
 </body>
 
 </html>
