@@ -1,2 +1,1 @@
-[<img src="images/header.png" align="center" alt="VictiScout">](https://github.com/frc1418/VictiScout)
-
+[<img src="images/header.png" 
